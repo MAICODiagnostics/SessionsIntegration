@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Patient>
+	<PatientId>ASDFGHJKL</PatientId>
+	<AlternateId>125.254-155\659 5548</AlternateId>
+	<Gender>male</Gender>
+	<LastName>Smith</LastName>
+	<FirstName>Eva</FirstName>
+	<DateOfBirth>1972-12-04</DateOfBirth>
+	<Insurer>Insure </Insurer>
+	<InsuranceNumber>999811-465-45455</InsuranceNumber>
+	<ReferredBy>flkdfd</ReferredBy>
+	<Physician>ReferredBy</Physician>
+	<Occupation>Occupation</Occupation>
+	<BillingNumber>BillingNumber</BillingNumber>
+	<Address>Address</Address>
+	<Address2>Address2</Address2>
+	<ZipCode>D-12169</ZipCode>
+	<City>City </City>
+	<State>State</State>
+	<Municipality>Municipality</Municipality>
+	<Telephone>+4930555555</Telephone>
+	<Mobile>+49157777777</Mobile>
+	<Email>E-Mail@E-Mail.com</Email>
+	<Fax>FAX NO 0030022155</Fax>
+</Patient>

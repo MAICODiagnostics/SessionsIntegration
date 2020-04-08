@@ -1,0 +1,2572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patient>
+  <LastName>Smith</LastName>
+  <FirstName>Eva</FirstName>
+  <DateOfBirth>1972-12-04</DateOfBirth>
+  <PatientId>ASDFGHJKL</PatientId>
+  <Session ScreenerName="mikk" CreateDate="2020-03-31T10:17:17.0279722+02:00">
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T17:25:19+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>4</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Noisy</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting xsi:nil="true" />
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>4</NumberFrequencies>
+            <ProtocolType>DP4s</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="2">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>7.8</NoiseFloor>
+                <DistortionProduct>8.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>20</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-8</NoiseFloor>
+                <DistortionProduct>-2.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>48</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>5.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-4.3</NoiseFloor>
+                <DistortionProduct>3.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>50</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>7.5</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-8.6</NoiseFloor>
+                <DistortionProduct>5.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>51</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>13.9</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>4</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Pass</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting xsi:nil="true" />
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>4</NumberFrequencies>
+            <ProtocolType>DP4s</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="2">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-11.8</NoiseFloor>
+                <DistortionProduct>2.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>53</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>14.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-9.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>94</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>10.9</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-17.5</NoiseFloor>
+                <DistortionProduct>-2.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>15.4</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>3.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>23.6</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>DP 4s</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T18:21:19+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>2</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Pass</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>4</NumberFrequencies>
+            <ProtocolType>DP2s</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="2">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-9.7</NoiseFloor>
+                <DistortionProduct>0.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>78</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>10.3</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-17.2</NoiseFloor>
+                <DistortionProduct>-5.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>11.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-15.4</NoiseFloor>
+                <DistortionProduct>-1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>14.4</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>25</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>2</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Pass</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>4</NumberFrequencies>
+            <ProtocolType>DP2s</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="2">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-7.5</NoiseFloor>
+                <DistortionProduct>4.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>78</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>12</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>57</SoundPressureLevel2>
+                <NoiseFloor>-16.9</NoiseFloor>
+                <DistortionProduct>0.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>84</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>17.8</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>69</SoundPressureLevel1>
+                <SoundPressureLevel2>59</SoundPressureLevel2>
+                <NoiseFloor>-13.2</NoiseFloor>
+                <DistortionProduct>-1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>76</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>12.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>67</SoundPressureLevel1>
+                <SoundPressureLevel2>53</SoundPressureLevel2>
+                <NoiseFloor>-7.8</NoiseFloor>
+                <DistortionProduct>-6.7</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>60</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>1.1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>DP 2s</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T17:28:58+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>4</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Pass</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>4</NumberFrequencies>
+            <ProtocolType>DP2To5</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="2">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-17.2</NoiseFloor>
+                <DistortionProduct>-4.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>56</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>12.8</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-0.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>19.6</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>4.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>89</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>24.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-15.8</NoiseFloor>
+                <DistortionProduct>2.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>67</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>18.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>4</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Error</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting xsi:nil="true" />
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>4</NumberFrequencies>
+            <ProtocolType>DP2To5</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="2">
+                <SoundPressureLevel1>53</SoundPressureLevel1>
+                <SoundPressureLevel2>43</SoundPressureLevel2>
+                <NoiseFloor>-3.1</NoiseFloor>
+                <DistortionProduct>2.7</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>53</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>5.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>60</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-17.2</NoiseFloor>
+                <DistortionProduct>-14.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>2.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>68</SoundPressureLevel1>
+                <SoundPressureLevel2>57</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-20</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>65</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>53</SoundPressureLevel2>
+                <NoiseFloor>-4.2</NoiseFloor>
+                <DistortionProduct>-5.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>30</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>DP 2.0 - 5.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T18:40:28+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>66</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>54</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>2</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Pass</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>5</PassSignalToNoiseRatio>
+            <NumberFrequencies>4</NumberFrequencies>
+            <ProtocolType>DP2To5</ProtocolType>
+            <IsProtocolModified>true</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>4</PassFrequency>
+            <Frequencies>
+              <Frequency Value="2">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-18</NoiseFloor>
+                <DistortionProduct>1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>19</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-4.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>15.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-2.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>17.4</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>67</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-19.6</NoiseFloor>
+                <DistortionProduct>4.7</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>24.3</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>67</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>53</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>1</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Pass</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting xsi:nil="true" />
+            <PassSignalToNoiseRatio>4</PassSignalToNoiseRatio>
+            <NumberFrequencies>4</NumberFrequencies>
+            <ProtocolType>DP2To5</ProtocolType>
+            <IsProtocolModified>true</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>2</PassFrequency>
+            <Frequencies>
+              <Frequency Value="2">
+                <SoundPressureLevel1>67</SoundPressureLevel1>
+                <SoundPressureLevel2>53</SoundPressureLevel2>
+                <NoiseFloor>-11.1</NoiseFloor>
+                <DistortionProduct>-1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>84</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>10.1</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>67</SoundPressureLevel1>
+                <SoundPressureLevel2>52</SoundPressureLevel2>
+                <NoiseFloor>-14.7</NoiseFloor>
+                <DistortionProduct>-4.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>10.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>67</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-15.6</NoiseFloor>
+                <DistortionProduct>-4.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>10.8</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>68</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>4.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>24.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>DP*2.0 - 5.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T17:32:15+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>4</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>NoFitError</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting xsi:nil="true" />
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>DP1Dot5To6</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>0</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1>63</SoundPressureLevel1>
+                <SoundPressureLevel2>52</SoundPressureLevel2>
+                <NoiseFloor>-3</NoiseFloor>
+                <DistortionProduct>-3.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>14</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-0.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1>61</SoundPressureLevel1>
+                <SoundPressureLevel2>48</SoundPressureLevel2>
+                <NoiseFloor>2.7</NoiseFloor>
+                <DistortionProduct>1.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>14</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1.6</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>60</SoundPressureLevel1>
+                <SoundPressureLevel2>79</SoundPressureLevel2>
+                <NoiseFloor>-8</NoiseFloor>
+                <DistortionProduct>-1.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>0</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>6.2</SignalToNoiseRatio>
+                <Status>Error</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>68</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-11.2</NoiseFloor>
+                <DistortionProduct>-20</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>53</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-8.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>67</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-15.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>50</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="6">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-3.6</NoiseFloor>
+                <DistortionProduct>-9.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>30</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-6.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>4</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Undefined</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting xsi:nil="true" />
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>DP1Dot5To6</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>0</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-13.8</NoiseFloor>
+                <DistortionProduct>-2.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>65</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>11</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>2.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>64</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>22.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-7.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>12.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-1.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>18.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>67</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>3.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>23.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="6">
+                <SoundPressureLevel1>67</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>2.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>22.6</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>DP 1.5 - 6.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T18:55:20+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>66</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>54</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>2</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Pass</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>3</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>DP1Dot5To6</ProtocolType>
+            <IsProtocolModified>true</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>2</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-1.9</NoiseFloor>
+                <DistortionProduct>6.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>53</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>8</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-7.2</NoiseFloor>
+                <DistortionProduct>2.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>60</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>9.6</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>51</SoundPressureLevel2>
+                <NoiseFloor>-17.2</NoiseFloor>
+                <DistortionProduct>-7.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>90</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>9.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>62</SoundPressureLevel1>
+                <SoundPressureLevel2>51</SoundPressureLevel2>
+                <NoiseFloor>-18.9</NoiseFloor>
+                <DistortionProduct>-7.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>79</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>11.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>63</SoundPressureLevel1>
+                <SoundPressureLevel2>52</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>98</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>21</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="6">
+                <SoundPressureLevel1>64</SoundPressureLevel1>
+                <SoundPressureLevel2>53</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>2.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>22.6</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>DP*1.5 - 6.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T17:36:15+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>4</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Undefined</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>12</NumberFrequencies>
+            <ProtocolType>DP1Dot6To8</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>0</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.6">
+                <SoundPressureLevel1>61</SoundPressureLevel1>
+                <SoundPressureLevel2>51</SoundPressureLevel2>
+                <NoiseFloor>-2.7</NoiseFloor>
+                <DistortionProduct>-8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>48</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-5.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1>60</SoundPressureLevel1>
+                <SoundPressureLevel2>50</SoundPressureLevel2>
+                <NoiseFloor>5.1</NoiseFloor>
+                <DistortionProduct>3.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>32</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1>64</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-17.2</NoiseFloor>
+                <DistortionProduct>-3.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>63</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>13.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.2">
+                <SoundPressureLevel1>64</SoundPressureLevel1>
+                <SoundPressureLevel2>53</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>0.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>20.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.6">
+                <SoundPressureLevel1>63</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-19.6</NoiseFloor>
+                <DistortionProduct>-0.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>19.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>62</SoundPressureLevel1>
+                <SoundPressureLevel2>57</SoundPressureLevel2>
+                <NoiseFloor>-17.8</NoiseFloor>
+                <DistortionProduct>-0.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>53</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>17.6</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4.5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>58</SoundPressureLevel2>
+                <NoiseFloor>-19.6</NoiseFloor>
+                <DistortionProduct>6.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>66</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>25.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>64</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>3.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>89</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>23.1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5.6">
+                <SoundPressureLevel1>58</SoundPressureLevel1>
+                <SoundPressureLevel2>52</SoundPressureLevel2>
+                <NoiseFloor>-19.6</NoiseFloor>
+                <DistortionProduct>-6.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>56</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>13.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="6.3">
+                <SoundPressureLevel1>58</SoundPressureLevel1>
+                <SoundPressureLevel2>52</SoundPressureLevel2>
+                <NoiseFloor>-14.2</NoiseFloor>
+                <DistortionProduct>-20</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>57</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-5.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="7.1">
+                <SoundPressureLevel1>60</SoundPressureLevel1>
+                <SoundPressureLevel2>53</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-20</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="8">
+                <SoundPressureLevel1>63</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-20</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>4</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Undefined</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>12</NumberFrequencies>
+            <ProtocolType>DP1Dot6To8</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>0</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.6">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-12.9</NoiseFloor>
+                <DistortionProduct>-0.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>50</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>12.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1>64</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-4.8</NoiseFloor>
+                <DistortionProduct>1.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>42</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>5.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1>58</SoundPressureLevel1>
+                <SoundPressureLevel2>66</SoundPressureLevel2>
+                <NoiseFloor>-14</NoiseFloor>
+                <DistortionProduct>-9.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>0</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4.2</SignalToNoiseRatio>
+                <Status>Error</Status>
+              </Frequency>
+              <Frequency Value="3.2">
+                <SoundPressureLevel1>75</SoundPressureLevel1>
+                <SoundPressureLevel2>61</SoundPressureLevel2>
+                <NoiseFloor>-10.2</NoiseFloor>
+                <DistortionProduct>-15.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>0</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-5.7</SignalToNoiseRatio>
+                <Status>Error</Status>
+              </Frequency>
+              <Frequency Value="3.6">
+                <SoundPressureLevel1>72</SoundPressureLevel1>
+                <SoundPressureLevel2>60</SoundPressureLevel2>
+                <NoiseFloor>-7</NoiseFloor>
+                <DistortionProduct>-8.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>0</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1.8</SignalToNoiseRatio>
+                <Status>Error</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>71</SoundPressureLevel1>
+                <SoundPressureLevel2>59</SoundPressureLevel2>
+                <NoiseFloor>-0.2</NoiseFloor>
+                <DistortionProduct>2.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>0</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>2.5</SignalToNoiseRatio>
+                <Status>Error</Status>
+              </Frequency>
+              <Frequency Value="4.5">
+                <SoundPressureLevel1>70</SoundPressureLevel1>
+                <SoundPressureLevel2>59</SoundPressureLevel2>
+                <NoiseFloor>-9.2</NoiseFloor>
+                <DistortionProduct>-8.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>46</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>69</SoundPressureLevel1>
+                <SoundPressureLevel2>59</SoundPressureLevel2>
+                <NoiseFloor>-10.9</NoiseFloor>
+                <DistortionProduct>-17.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>35</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-6.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5.6">
+                <SoundPressureLevel1>69</SoundPressureLevel1>
+                <SoundPressureLevel2>65</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-13.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>41</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>6.6</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="6.3">
+                <SoundPressureLevel1>72</SoundPressureLevel1>
+                <SoundPressureLevel2>66</SoundPressureLevel2>
+                <NoiseFloor>-14.7</NoiseFloor>
+                <DistortionProduct>-10.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>49</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="7.1">
+                <SoundPressureLevel1>73</SoundPressureLevel1>
+                <SoundPressureLevel2>69</SoundPressureLevel2>
+                <NoiseFloor>-16.3</NoiseFloor>
+                <DistortionProduct>-12</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>47</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="8">
+                <SoundPressureLevel1>76</SoundPressureLevel1>
+                <SoundPressureLevel2>70</SoundPressureLevel2>
+                <NoiseFloor>-12.9</NoiseFloor>
+                <DistortionProduct>-10.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>48</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>2.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>DP 1.6 - 8.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T18:57:40+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>66</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>54</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>2</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Undefined</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>3</PassSignalToNoiseRatio>
+            <NumberFrequencies>12</NumberFrequencies>
+            <ProtocolType>DP1Dot6To8</ProtocolType>
+            <IsProtocolModified>true</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>12</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.6">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-14.7</NoiseFloor>
+                <DistortionProduct>-2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>57</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>12.7</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>1.8</NoiseFloor>
+                <DistortionProduct>2.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>32</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-10.1</NoiseFloor>
+                <DistortionProduct>-0.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>59</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>9.7</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="3.2">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-14.7</NoiseFloor>
+                <DistortionProduct>-5.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>9.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.6">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-1.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>18.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-17.5</NoiseFloor>
+                <DistortionProduct>-0.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>17</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="4.5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-19.3</NoiseFloor>
+                <DistortionProduct>6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>25.3</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>7.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>27.3</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="5.6">
+                <SoundPressureLevel1>53</SoundPressureLevel1>
+                <SoundPressureLevel2>50</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-1.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>18.8</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="6.3">
+                <SoundPressureLevel1>57</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>3.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>23.8</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="7.1">
+                <SoundPressureLevel1>63</SoundPressureLevel1>
+                <SoundPressureLevel2>58</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>2.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>22.1</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="8">
+                <SoundPressureLevel1>67</SoundPressureLevel1>
+                <SoundPressureLevel2>63</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>0.7</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>20.7</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>66</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>54</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>2</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Undefined</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>3</PassSignalToNoiseRatio>
+            <NumberFrequencies>12</NumberFrequencies>
+            <ProtocolType>DP1Dot6To8</ProtocolType>
+            <IsProtocolModified>true</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>12</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.6">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-18</NoiseFloor>
+                <DistortionProduct>-14</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>82</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-17.2</NoiseFloor>
+                <DistortionProduct>-14.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>2.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-19</NoiseFloor>
+                <DistortionProduct>-19</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.2">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-18.9</NoiseFloor>
+                <DistortionProduct>-14.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.6">
+                <SoundPressureLevel1>56</SoundPressureLevel1>
+                <SoundPressureLevel2>49</SoundPressureLevel2>
+                <NoiseFloor>-16.7</NoiseFloor>
+                <DistortionProduct>-13</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>3.6</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-19.3</NoiseFloor>
+                <DistortionProduct>-20</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-0.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4.5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-17.2</NoiseFloor>
+                <DistortionProduct>-17.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-17.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>2.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5.6">
+                <SoundPressureLevel1>63</SoundPressureLevel1>
+                <SoundPressureLevel2>57</SoundPressureLevel2>
+                <NoiseFloor>-19.6</NoiseFloor>
+                <DistortionProduct>-20</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-0.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="6.3">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-20</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="7.1">
+                <SoundPressureLevel1>68</SoundPressureLevel1>
+                <SoundPressureLevel2>60</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-20</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="8">
+                <SoundPressureLevel1>69</SoundPressureLevel1>
+                <SoundPressureLevel2>64</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-20</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>DP*1.6 - 8.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T17:46:46+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>65</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>55</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>4</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Undefined</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>6</PassSignalToNoiseRatio>
+            <NumberFrequencies>12</NumberFrequencies>
+            <ProtocolType>DP1Dot5To12</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>0</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-18.5</NoiseFloor>
+                <DistortionProduct>-4.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>13.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-17.8</NoiseFloor>
+                <DistortionProduct>2.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>20.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-6.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>13.1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>64</SoundPressureLevel1>
+                <SoundPressureLevel2>57</SoundPressureLevel2>
+                <NoiseFloor>-8.4</NoiseFloor>
+                <DistortionProduct>4.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>57</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>13.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>70</SoundPressureLevel1>
+                <SoundPressureLevel2>60</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>7.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>95</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>27.1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="6">
+                <SoundPressureLevel1>58</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-1.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>18.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="7">
+                <SoundPressureLevel1>64</SoundPressureLevel1>
+                <SoundPressureLevel2>60</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-1.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>18.7</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="8">
+                <SoundPressureLevel1>68</SoundPressureLevel1>
+                <SoundPressureLevel2>64</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-4.7</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>92</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>15.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="9">
+                <SoundPressureLevel1>74</SoundPressureLevel1>
+                <SoundPressureLevel2>69</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-6.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>57</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>13.7</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="10">
+                <SoundPressureLevel1>75</SoundPressureLevel1>
+                <SoundPressureLevel2>61</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>0.7</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>20.7</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="11">
+                <SoundPressureLevel1>81</SoundPressureLevel1>
+                <SoundPressureLevel2>44</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-0.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>19.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="12">
+                <SoundPressureLevel1>71</SoundPressureLevel1>
+                <SoundPressureLevel2>52</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-4.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>15.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>DP 1.5 - 12.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T19:02:42+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>DP</Type>
+            <TargetSoundPressureLevel1>66</TargetSoundPressureLevel1>
+            <TargetSoundPressureLevel2>54</TargetSoundPressureLevel2>
+            <Peak>0</Peak>
+            <Duration>0</Duration>
+            <AveragingTime>2</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Undefined</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>3</PassSignalToNoiseRatio>
+            <NumberFrequencies>12</NumberFrequencies>
+            <ProtocolType>DP1Dot5To12</ProtocolType>
+            <IsProtocolModified>true</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1>65</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-17</NoiseFloor>
+                <DistortionProduct>-5.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>78</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>11.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-17.2</NoiseFloor>
+                <DistortionProduct>1.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>78</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>19.1</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>54</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>15</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-17.8</NoiseFloor>
+                <DistortionProduct>-0.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>17.4</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="5">
+                <SoundPressureLevel1>67</SoundPressureLevel1>
+                <SoundPressureLevel2>55</SoundPressureLevel2>
+                <NoiseFloor>-18.5</NoiseFloor>
+                <DistortionProduct>5.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>24.1</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="6">
+                <SoundPressureLevel1>60</SoundPressureLevel1>
+                <SoundPressureLevel2>56</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>2.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>22.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="7">
+                <SoundPressureLevel1>66</SoundPressureLevel1>
+                <SoundPressureLevel2>61</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>3.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>23.9</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="8">
+                <SoundPressureLevel1>71</SoundPressureLevel1>
+                <SoundPressureLevel2>65</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>2.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>22.9</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="9">
+                <SoundPressureLevel1>76</SoundPressureLevel1>
+                <SoundPressureLevel2>63</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>6.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>26.8</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="10">
+                <SoundPressureLevel1>77</SoundPressureLevel1>
+                <SoundPressureLevel2>61</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>5.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>25.3</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="11">
+                <SoundPressureLevel1>75</SoundPressureLevel1>
+                <SoundPressureLevel2>42</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>-0.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>19.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="12">
+                <SoundPressureLevel1>72</SoundPressureLevel1>
+                <SoundPressureLevel2>42</SoundPressureLevel2>
+                <NoiseFloor>-20</NoiseFloor>
+                <DistortionProduct>3.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>23.2</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>DP*1.5 - 12.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T17:52:37+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>TE</Type>
+            <TargetSoundPressureLevel1 xsi:nil="true" />
+            <TargetSoundPressureLevel2 xsi:nil="true" />
+            <Peak>81</Peak>
+            <Duration>29</Duration>
+            <AveragingTime>29</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Pass</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting xsi:nil="true" />
+            <PassSignalToNoiseRatio>4</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>TE64s</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-13.8</NoiseFloor>
+                <DistortionProduct>-9.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>53</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-16.3</NoiseFloor>
+                <DistortionProduct>-11.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>50</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4.3</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-14.2</NoiseFloor>
+                <DistortionProduct>-15</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>65</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-0.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-16.5</NoiseFloor>
+                <DistortionProduct>-16.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>77</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-20.4</NoiseFloor>
+                <DistortionProduct>-13.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>62</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>6.9</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-19</NoiseFloor>
+                <DistortionProduct>-19</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>65</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>TE 64s</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T18:23:22+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>TE</Type>
+            <TargetSoundPressureLevel1 xsi:nil="true" />
+            <TargetSoundPressureLevel2 xsi:nil="true" />
+            <Peak>80</Peak>
+            <Duration>32</Duration>
+            <AveragingTime>32</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Fail</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>4</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>TE32s</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-14.9</NoiseFloor>
+                <DistortionProduct>-12.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>94</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>2.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-15</NoiseFloor>
+                <DistortionProduct>-12.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>70</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>2.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-16.5</NoiseFloor>
+                <DistortionProduct>-16</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>83</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-20.5</NoiseFloor>
+                <DistortionProduct>-19.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>92</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.7</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-22.1</NoiseFloor>
+                <DistortionProduct>-15.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>6.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-24</NoiseFloor>
+                <DistortionProduct>-18.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>5.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>TE</Type>
+            <TargetSoundPressureLevel1 xsi:nil="true" />
+            <TargetSoundPressureLevel2 xsi:nil="true" />
+            <Peak>80</Peak>
+            <Duration>32</Duration>
+            <AveragingTime>32</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Fail</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-10</MinPassSetting>
+            <PassSignalToNoiseRatio>4</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>TE32s</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-11.3</NoiseFloor>
+                <DistortionProduct>-12.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>84</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-0.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-19.8</NoiseFloor>
+                <DistortionProduct>-14.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>94</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-17.5</NoiseFloor>
+                <DistortionProduct>-15.7</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>99</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>1.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-18.7</NoiseFloor>
+                <DistortionProduct>-17.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>95</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-18</NoiseFloor>
+                <DistortionProduct>-17.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>95</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-20.7</NoiseFloor>
+                <DistortionProduct>-14.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>51</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>5.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>TE 32s</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T17:55:30+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>TE</Type>
+            <TargetSoundPressureLevel1 xsi:nil="true" />
+            <TargetSoundPressureLevel2 xsi:nil="true" />
+            <Peak>81</Peak>
+            <Duration>64</Duration>
+            <AveragingTime>64</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Fail</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-10</MinPassSetting>
+            <PassSignalToNoiseRatio>4</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>TE1Dot5To4</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-16.9</NoiseFloor>
+                <DistortionProduct>-13.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>75</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>3.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-14.8</NoiseFloor>
+                <DistortionProduct>-16.7</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>65</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-16.8</NoiseFloor>
+                <DistortionProduct>-14.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>74</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>2.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-17.3</NoiseFloor>
+                <DistortionProduct>-19.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>77</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-18.8</NoiseFloor>
+                <DistortionProduct>-22</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>88</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-3.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-22</NoiseFloor>
+                <DistortionProduct>-16.7</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>89</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>5.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>TE</Type>
+            <TargetSoundPressureLevel1 xsi:nil="true" />
+            <TargetSoundPressureLevel2 xsi:nil="true" />
+            <Peak>83</Peak>
+            <Duration>64</Duration>
+            <AveragingTime>64</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Fail</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>4</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>TE1Dot5To4</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>3</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-8.6</NoiseFloor>
+                <DistortionProduct>-8.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>65</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-9.4</NoiseFloor>
+                <DistortionProduct>-12</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>56</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-2.6</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-15.3</NoiseFloor>
+                <DistortionProduct>-16.7</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>57</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-19.3</NoiseFloor>
+                <DistortionProduct>-15.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>52</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>3.7</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-20.5</NoiseFloor>
+                <DistortionProduct>-17.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>56</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>2.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-19.6</NoiseFloor>
+                <DistortionProduct>-18.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>57</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>1.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>TE 1.5 - 4.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T19:07:34+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>TE</Type>
+            <TargetSoundPressureLevel1 xsi:nil="true" />
+            <TargetSoundPressureLevel2 xsi:nil="true" />
+            <Peak>81</Peak>
+            <Duration>16</Duration>
+            <AveragingTime>16</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Fail</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>3</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>TE1Dot5To4</ProtocolType>
+            <IsProtocolModified>true</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>1</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-11.3</NoiseFloor>
+                <DistortionProduct>-10.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>50</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>1.1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-9.9</NoiseFloor>
+                <DistortionProduct>-11.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>64</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-10.7</NoiseFloor>
+                <DistortionProduct>-16.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>86</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-6.1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-13</NoiseFloor>
+                <DistortionProduct>-19.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>75</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-6.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-17.3</NoiseFloor>
+                <DistortionProduct>-13.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>90</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>3.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-14</NoiseFloor>
+                <DistortionProduct>-21.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>81</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-7.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>TE</Type>
+            <TargetSoundPressureLevel1 xsi:nil="true" />
+            <TargetSoundPressureLevel2 xsi:nil="true" />
+            <Peak>80</Peak>
+            <Duration>9</Duration>
+            <AveragingTime>9</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Pass</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>3</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>TE1Dot5To4</ProtocolType>
+            <IsProtocolModified>true</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>1</PassFrequency>
+            <Frequencies>
+              <Frequency Value="1.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-7.1</NoiseFloor>
+                <DistortionProduct>-7.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>61</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-0.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-10.8</NoiseFloor>
+                <DistortionProduct>-3.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>94</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>7.3</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="2.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-14.6</NoiseFloor>
+                <DistortionProduct>-10.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>81</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-13.4</NoiseFloor>
+                <DistortionProduct>-15.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>93</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-2.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="3.5">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-11.9</NoiseFloor>
+                <DistortionProduct>-16.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>91</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-4.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-13.5</NoiseFloor>
+                <DistortionProduct>-11.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>52</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>2.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>SNR</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>TE*1.5 - 4.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T18:16:45+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>TE</Type>
+            <TargetSoundPressureLevel1 xsi:nil="true" />
+            <TargetSoundPressureLevel2 xsi:nil="true" />
+            <Peak>80</Peak>
+            <Duration>64</Duration>
+            <AveragingTime>64</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Undefined</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting xsi:nil="true" />
+            <PassSignalToNoiseRatio>4</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>TE0Dot7To4</ProtocolType>
+            <IsProtocolModified>false</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>0</PassFrequency>
+            <Frequencies>
+              <Frequency Value="0.7">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-12.1</NoiseFloor>
+                <DistortionProduct>-13.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>56</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="1">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-13.6</NoiseFloor>
+                <DistortionProduct>-13.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>60</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.2</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="1.4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-13.1</NoiseFloor>
+                <DistortionProduct>-14.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>86</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-13.4</NoiseFloor>
+                <DistortionProduct>-16.9</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>63</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-3.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.8">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-15.2</NoiseFloor>
+                <DistortionProduct>-16.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>94</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-22.2</NoiseFloor>
+                <DistortionProduct>-17.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>92</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>4.6</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>TE 0.7 - 4.0</Name>
+    </TestData>
+    <TestData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" MeasurementType="OaeMeasurements">
+      <DeviceInformation>
+        <Id>EroScan</Id>
+        <DisplayName>ERO•SCAN®</DisplayName>
+        <SerialNumber>9999999</SerialNumber>
+        <ProbeNumber>2004677</ProbeNumber>
+        <LastCalibration xsi:nil="true" />
+        <IsAudiometryAcSupported>false</IsAudiometryAcSupported>
+        <IsAudiometryBcAndMaskingSupported>false</IsAudiometryBcAndMaskingSupported>
+        <IsDualEarTransferSupported>true</IsDualEarTransferSupported>
+        <IsPatientManagerActive>false</IsPatientManagerActive>
+      </DeviceInformation>
+      <Measurements xsi:type="OaeMeasurements">
+        <CreateDate>2019-05-27T19:12:14+02:00</CreateDate>
+        <OtoacousticEmissionList>
+          <OtoacousticEmission>
+            <Type>TE</Type>
+            <TargetSoundPressureLevel1 xsi:nil="true" />
+            <TargetSoundPressureLevel2 xsi:nil="true" />
+            <Peak>80</Peak>
+            <Duration>16</Duration>
+            <AveragingTime>16</AveragingTime>
+            <EarSide>Left</EarSide>
+            <Result>Fail</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-10</MinPassSetting>
+            <PassSignalToNoiseRatio>3</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>TE0Dot7To4</ProtocolType>
+            <IsProtocolModified>true</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>2</PassFrequency>
+            <Frequencies>
+              <Frequency Value="0.7">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-10.5</NoiseFloor>
+                <DistortionProduct>-7.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>53</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>3.1</SignalToNoiseRatio>
+                <Status>Pass</Status>
+              </Frequency>
+              <Frequency Value="1">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-8.6</NoiseFloor>
+                <DistortionProduct>-8.2</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>64</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="1.4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-5</NoiseFloor>
+                <DistortionProduct>-8.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>53</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-3.4</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-8.6</NoiseFloor>
+                <DistortionProduct>-9.3</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>50</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-0.7</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.8">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-9.4</NoiseFloor>
+                <DistortionProduct>-10.5</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>69</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1.1</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-15.6</NoiseFloor>
+                <DistortionProduct>-13.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>78</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>1.7</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+          <OtoacousticEmission>
+            <Type>TE</Type>
+            <TargetSoundPressureLevel1 xsi:nil="true" />
+            <TargetSoundPressureLevel2 xsi:nil="true" />
+            <Peak>80</Peak>
+            <Duration>16</Duration>
+            <AveragingTime>16</AveragingTime>
+            <EarSide>Right</EarSide>
+            <Result>Fail</Result>
+            <RecordVersion>210</RecordVersion>
+            <MinPassSetting>-5</MinPassSetting>
+            <PassSignalToNoiseRatio>4</PassSignalToNoiseRatio>
+            <NumberFrequencies>6</NumberFrequencies>
+            <ProtocolType>TE0Dot7To4</ProtocolType>
+            <IsProtocolModified>true</IsProtocolModified>
+            <AutoStop>false</AutoStop>
+            <ReverseFrequency>false</ReverseFrequency>
+            <PassFrequency>4</PassFrequency>
+            <Frequencies>
+              <Frequency Value="0.7">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-13.6</NoiseFloor>
+                <DistortionProduct>-13.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>77</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>0.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="1">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-12.2</NoiseFloor>
+                <DistortionProduct>-10.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>64</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>1.8</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="1.4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-14.5</NoiseFloor>
+                <DistortionProduct>-10.6</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>80</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>3.9</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-7.8</NoiseFloor>
+                <DistortionProduct>-12.1</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>79</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-4.3</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="2.8">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-11.9</NoiseFloor>
+                <DistortionProduct>-13.4</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>95</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-1.5</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+              <Frequency Value="4">
+                <SoundPressureLevel1 xsi:nil="true" />
+                <SoundPressureLevel2 xsi:nil="true" />
+                <NoiseFloor>-15.8</NoiseFloor>
+                <DistortionProduct>-15.8</DistortionProduct>
+                <NumberOfBlockAcceptedPercent>94</NumberOfBlockAcceptedPercent>
+                <SignalToNoiseRatio>-0</SignalToNoiseRatio>
+                <Status>Undefined</Status>
+              </Frequency>
+            </Frequencies>
+            <InstrumentGraphType>Value</InstrumentGraphType>
+            <MaicoTableId>0</MaicoTableId>
+          </OtoacousticEmission>
+        </OtoacousticEmissionList>
+      </Measurements>
+      <Name>TE*0.7 - 4.0</Name>
+    </TestData>
+  </Session>
+</Patient>

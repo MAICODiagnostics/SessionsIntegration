@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Patient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="LastName" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="FirstName" type="xs:string" />
+        <xs:element minOccurs="1" maxOccurs="1" name="DateOfBirth" nillable="true" type="xs:date" />
+        <xs:element minOccurs="0" maxOccurs="1" name="PatientId" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="1" name="Session">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="TestData">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="DeviceInformation" type="DeviceInformation" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Measurements" type="Measurements" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="MeasurementType" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="ScreenerName" type="xs:string" />
+            <xs:attribute name="CreateDate" type="xs:dateTime" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="DeviceInformation">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Id" type="DeviceEnum" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DisplayName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ProbeNumber" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="BoardNumber" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MacAddress" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VersionInformation" type="VersionInformation" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FirmwareVersion" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="LastCalibration" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsAudiometryAcSupported" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsAudiometryBcAndMaskingSupported" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsDualEarTransferSupported" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsPatientManagerActive" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="DeviceEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="easyTymp" />
+      <xs:enumeration value="touchTymp" />
+      <xs:enumeration value="MA25e" />
+      <xs:enumeration value="MA27e" />
+      <xs:enumeration value="MA28" />
+      <xs:enumeration value="PilotTest" />
+      <xs:enumeration value="EroScan" />
+      <xs:enumeration value="Tesla" />
+      <xs:enumeration value="TestDataGenerator" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="VersionInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="JenkinsBuildNumber" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MainboardRevision" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MarketingVersion" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PlatformVersion" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SubversionRevision" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Measurements" abstract="true">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="CreateDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OaeMeasurements">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Measurements">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="OtoacousticEmissionList" type="ArrayOfOtoacousticEmission" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfOtoacousticEmission">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OtoacousticEmission" nillable="true" type="OtoacousticEmission" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OtoacousticEmission">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Type" type="OaeSimpleType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TargetSoundPressureLevel1" nillable="true" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TargetSoundPressureLevel2" nillable="true" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Peak" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Duration" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="AveragingTime" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EarSide" type="EarSide" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Result" nillable="true" type="MeasurementStatus" />
+      <xs:element minOccurs="1" maxOccurs="1" name="RecordVersion" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MinPassSetting" nillable="true" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="PassSignalToNoiseRatio" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="NumberFrequencies" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ProtocolType" type="OaeProtocolType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsProtocolModified" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="AutoStop" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ReverseFrequency" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="PassFrequency" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Frequencies" type="ArrayOfFrequency" />
+      <xs:element minOccurs="1" maxOccurs="1" name="InstrumentGraphType" type="InstrumentGraphType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MaicoTableId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="OaeSimpleType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="DP" />
+      <xs:enumeration value="TE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="EarSide">
+    <xs:list>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Undefined" />
+          <xs:enumeration value="Left" />
+          <xs:enumeration value="Right" />
+          <xs:enumeration value="Both" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:list>
+  </xs:simpleType>
+  <xs:simpleType name="MeasurementStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="Pass" />
+      <xs:enumeration value="Fail" />
+      <xs:enumeration value="NotUsed" />
+      <xs:enumeration value="Noisy" />
+      <xs:enumeration value="NoFitError" />
+      <xs:enumeration value="Error" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="OaeProtocolType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="DP4s" />
+      <xs:enumeration value="DP2s" />
+      <xs:enumeration value="DP2To5" />
+      <xs:enumeration value="DP1Dot5To6" />
+      <xs:enumeration value="DP1Dot6To8" />
+      <xs:enumeration value="DP1Dot5To12" />
+      <xs:enumeration value="TE64s" />
+      <xs:enumeration value="TE32s" />
+      <xs:enumeration value="TE1Dot5To4" />
+      <xs:enumeration value="TE0Dot7To4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ArrayOfFrequency">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Frequency" nillable="true" type="Frequency" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Frequency">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="SoundPressureLevel1" nillable="true" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="SoundPressureLevel2" nillable="true" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="NoiseFloor" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="DistortionProduct" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="NumberOfBlockAcceptedPercent" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="SignalToNoiseRatio" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="MeasurementStatus" />
+    </xs:sequence>
+    <xs:attribute name="Value" type="xs:double" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="InstrumentGraphType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="SNR" />
+      <xs:enumeration value="Value" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ImpedanceMeasurements">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Measurements">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="ETF1List" type="ArrayOfETF1" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ETF2List" type="ArrayOfETF2" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ReflexDecayList" type="ArrayOfReflexDecay" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ReflexList" type="ArrayOfReflex" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TympanogramList" type="ArrayOfTympanogram" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfETF1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ETF1" nillable="true" type="ETF1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ETF1">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="ChannelVolume" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Curves" type="ArrayOfEtf1Data" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EarSide" type="EarSide" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Frequency" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="PumpSpeed" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MaicoDBIDMessen" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="NormativeBox" type="NormativeBox" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ShowEarSidesInterchanged" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ValsalvaFirst" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfEtf1Data">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Etf1Data" nillable="true" type="Etf1Data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Etf1Data">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="NumberOfPoints" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Pressure" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="1" name="XAxisData" type="ArrayOfDouble" />
+      <xs:element minOccurs="0" maxOccurs="1" name="YAxisData" type="ArrayOfDouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfDouble">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="double" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NormativeBox">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="MaxPressure" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MaxVolume" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MinPressure" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MinVolume" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfETF2">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ETF2" nillable="true" type="ETF2" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ETF2">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CloseList" type="ArrayOfOpenCloseListValues" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EarSide" type="EarSide" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MaicoDBIDMessen" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="OpenList" type="ArrayOfOpenCloseListValues" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ShowEarSidesInterchanged" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="StartPressure" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TestDuration" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="1" name="XAxisData" type="ArrayOfDouble" />
+      <xs:element minOccurs="0" maxOccurs="1" name="YAxisData" type="ArrayOfDouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfOpenCloseListValues">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OpenCloseListValues" type="OpenCloseListValues" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OpenCloseListValues">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Pressure" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Time" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfReflexDecay">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReflexDecay" nillable="true" type="ReflexDecay" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ReflexDecay">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Decay" nillable="true" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Duration" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EarSide" type="EarSide" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Frequency" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsReversed" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Level" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MaicoDBIDMessen" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Marker" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Mode" type="ReflexMode" />
+      <xs:element minOccurs="1" maxOccurs="1" name="NumberOfPoints" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Pressure" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Sensitivity" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ShowEarSidesInterchanged" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="MeasurementStatus" />
+      <xs:element minOccurs="1" maxOccurs="1" name="StimulusType" type="StimulusType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="XAxisData" type="ArrayOfDouble" />
+      <xs:element minOccurs="0" maxOccurs="1" name="YAxisData" type="ArrayOfDouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ReflexMode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="IPSI" />
+      <xs:enumeration value="CONTRA" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StimulusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="PureTone" />
+      <xs:enumeration value="WarbleTone" />
+      <xs:enumeration value="BB" />
+      <xs:enumeration value="LP" />
+      <xs:enumeration value="HP" />
+      <xs:enumeration value="WB" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ArrayOfReflex">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Reflex" nillable="true" type="Reflex" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Reflex">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="EarSide" type="EarSide" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EndLevel" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Frequency" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsReversed" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Level" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MaicoDBIDMessen" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="OffDuration" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="OnDuration" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Mode" type="ReflexMode" />
+      <xs:element minOccurs="1" maxOccurs="1" name="NumberOfPoints" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Sensitivity" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ShowEarSidesInterchanged" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="StartLevel" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="MeasurementStatus" />
+      <xs:element minOccurs="1" maxOccurs="1" name="StimulusType" type="StimulusType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TableModeView" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="XAxisData" type="ArrayOfDouble" />
+      <xs:element minOccurs="0" maxOccurs="1" name="YAxisData" type="ArrayOfDouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfTympanogram">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tympanogram" nillable="true" type="Tympanogram" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Tympanogram">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="ChannelVolume" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Compliance" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EarSide" type="EarSide" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Frequency" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Gradient" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MaicoDBIDMessen" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="NormativeBox" type="NormativeBox" />
+      <xs:element minOccurs="1" maxOccurs="1" name="NumberOfPoints" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="PumpSpeed" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Pressure" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ShowEarSidesInterchanged" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Status" nillable="true" type="MeasurementStatus" />
+      <xs:element minOccurs="0" maxOccurs="1" name="XAxisData" type="ArrayOfDouble" />
+      <xs:element minOccurs="0" maxOccurs="1" name="YAxisData" type="ArrayOfDouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AudiometryMeasurements">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Measurements">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="ToneAudiometryList" type="ArrayOfTone" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfTone">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tone" nillable="true" type="Tone" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Tone">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Condition" type="ConditionEnum" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ConductionTypes" type="ConductionTypes" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EarSide" type="EarSide" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MeasurementType" type="SubMeasurementTypesEnum" />
+      <xs:element minOccurs="1" maxOccurs="1" name="SignalTypeMasking" type="InputTypesEnum" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Thresholds" type="ArrayOfThreshold" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Transducer" type="TransducerType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ThresholdMethod" type="ThresholdMethodEnum" />
+      <xs:element minOccurs="1" maxOccurs="1" name="ShowEarSidesInterchanged" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AvailableAirFrequencies" type="ArrayOfInt" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AvailableBoneFrequencies" type="ArrayOfInt" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AvailableHwFrequencies" type="ArrayOfInt" />
+      <xs:element minOccurs="1" maxOccurs="1" name="SymbolSet" type="AudiogramSymbolSetEnum" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BoneLineStyle" type="BCLineStyleEnum" />
+      <xs:element minOccurs="1" maxOccurs="1" name="DisplayType" type="DisplayTypeEnum" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MaicoDBIDMessen" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ConditionEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="Unaided" />
+      <xs:enumeration value="Aided" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ConductionTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AC" />
+      <xs:enumeration value="BC" />
+      <xs:enumeration value="FF" />
+      <xs:enumeration value="IP" />
+      <xs:enumeration value="None" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SubMeasurementTypesEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="HL" />
+      <xs:enumeration value="MCL" />
+      <xs:enumeration value="UCL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="InputTypesEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="Tone" />
+      <xs:enumeration value="WarbleTone" />
+      <xs:enumeration value="NB" />
+      <xs:enumeration value="WN" />
+      <xs:enumeration value="SN" />
+      <xs:enumeration value="CD" />
+      <xs:enumeration value="MIC" />
+      <xs:enumeration value="Wavefile" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ArrayOfThreshold">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Threshold" nillable="true" type="Threshold" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Threshold">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Frequency" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Intensity" nillable="true" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IntensityMasked" nillable="true" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Status" type="ToneAudiometryStatus" />
+      <xs:element minOccurs="1" maxOccurs="1" name="PresentationType" nillable="true" type="PulseTypeEnum" />
+      <xs:element minOccurs="1" maxOccurs="1" name="SignalType" type="InputTypesEnum" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="ToneAudiometryStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="NotHeard" />
+      <xs:enumeration value="Heard" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PulseTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Multi" />
+      <xs:enumeration value="Single" />
+      <xs:enumeration value="Continuous" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TransducerType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Undefined" />
+      <xs:enumeration value="TDH39" />
+      <xs:enumeration value="HDA200" />
+      <xs:enumeration value="HDA280" />
+      <xs:enumeration value="B71" />
+      <xs:enumeration value="A20" />
+      <xs:enumeration value="EAR3A" />
+      <xs:enumeration value="EAR5A" />
+      <xs:enumeration value="CIR22" />
+      <xs:enumeration value="KossR80" />
+      <xs:enumeration value="Holmco8103" />
+      <xs:enumeration value="DD45" />
+      <xs:enumeration value="BKH10" />
+      <xs:enumeration value="FreeFieldPower" />
+      <xs:enumeration value="FreeFieldLine" />
+      <xs:enumeration value="FreeFieldSpeaker" />
+      <xs:enumeration value="B71Forehead" />
+      <xs:enumeration value="TDH50" />
+      <xs:enumeration value="TDH50ArtificialEar" />
+      <xs:enumeration value="DD45ArtificialEar" />
+      <xs:enumeration value="EAR3AEarSimulator" />
+      <xs:enumeration value="EAR3AHighImpedance" />
+      <xs:enumeration value="EAR3AHighImpedanceEarSimulator" />
+      <xs:enumeration value="B71HighImpedance" />
+      <xs:enumeration value="B71HighImpedanceForehead" />
+      <xs:enumeration value="HDA300" />
+      <xs:enumeration value="B81" />
+      <xs:enumeration value="B81Forehead" />
+      <xs:enumeration value="IP30" />
+      <xs:enumeration value="IP30EarSimulator" />
+      <xs:enumeration value="IP30HighImpedance" />
+      <xs:enumeration value="IP30HighImpedanceEarSimulator" />
+      <xs:enumeration value="DD450" />
+      <xs:enumeration value="DD65" />
+      <xs:enumeration value="DD65v2" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ThresholdMethodEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Manual" />
+      <xs:enumeration value="HughsonWestlake" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ArrayOfInt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="int" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="AudiogramSymbolSetEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="International" />
+      <xs:enumeration value="US" />
+      <xs:enumeration value="UK" />
+      <xs:enumeration value="Australia" />
+      <xs:enumeration value="HongKong" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="BCLineStyleEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Dashed" />
+      <xs:enumeration value="Solid" />
+      <xs:enumeration value="NoLine" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DisplayTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Table" />
+      <xs:enumeration value="LineChart" />
+      <xs:enumeration value="BarChart" />
+      <xs:enumeration value="OneAudiogram" />
+      <xs:enumeration value="TwoAudiograms" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
